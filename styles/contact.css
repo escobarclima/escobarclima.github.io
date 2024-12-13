@@ -1,0 +1,93 @@
+.contact {
+  padding: 6rem 0;
+  background-color: var(--body-bg);
+  transition: background-color 0.3s ease;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.contact-info {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.info-item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.info-item:not(:last-child) {
+  border-bottom: 1px solid var(--shadow-color);
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  justify-self: center;
+}
+
+.info-item p {
+  margin: 0;
+  text-align: left;
+}
+
+/* PayPal Button Styles */
+.paypal-container {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: background-color 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+.pp-NBNF2DN575ZZA {
+  text-align: center;
+  border: none;
+  border-radius: 1.5rem;
+  min-width: 11.625rem;
+  padding: 0 2rem;
+  height: 2rem;
+  font-weight: bold;
+  background-color: #FFD140;
+  color: #000000;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  cursor: pointer;
+}
+
+.paypal-form {
+  display: inline-grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.paypal-powered-by {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+}
+
+.paypal-powered-by img {
+  height: 0.875rem;
+  vertical-align: middle;
+}
