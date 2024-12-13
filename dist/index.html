@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EscobarClima - Servicio de Aire Acondicionado</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-LImlIOvy.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <i class="fas fa-snowflake"></i>
+          <span>EscobarClima</span>
+        </div>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar-links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#beneficios">¿Por qué elegirnos?</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <div class="hero-title-container">
+          <i class="fas fa-snowflake hero-icon"></i>
+          <h1>Carga de Gas <br> Reparación de Aire</h1>
+        </div>
+        <p class="subtitle">Servicio profesional a domicilio en Escobar y Zona Norte</p>
+
+        <a href="https://wa.me/+5491171456850" class="hero-cta whatsapp-button">
+          <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="servicios" class="services-container">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-car-side service-icon"></i>
+            <h3>Carga de Gas para Autos</h3>
+            <p>Mantén el aire acondicionado de tu vehículo funcionando a la perfección, sin salir de casa.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-kitchen-set service-icon"></i>
+            <h3>Reparación de Heladeras</h3>
+            <p>Carga de gas y mantenimiento integral para asegurar que tus alimentos se conserven frescos.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-wind service-icon"></i>
+            <h3>Aire Acondicionado</h3>
+            <p>Servicios de carga de gas y reparación para un ambiente confortable en todo momento.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios" class="benefits">
+        <div class="container">
+          <h2>¿Por Qué Elegirnos?</h2>
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <i class="fas fa-headset benefit-icon"></i>
+              <h3>Atención Personalizada</h3>
+              <p>Servicio rápido y adaptado a tus necesidades</p>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-certificate benefit-icon"></i>
+              <h3>Experiencia</h3>
+              <p>Técnicos altamente calificados y profesionales</p>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-tools benefit-icon"></i>
+              <h3>Soluciones a Medida</h3>
+              <p>Adaptamos nuestros servicios a cada cliente</p>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-home benefit-icon"></i>
+              <h3>Servicio a Domicilio</h3>
+              <p>Cobertura en Escobar y Zona Norte</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact">
+        <div class="container">
+          <h2>Contacto</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Escobar y Zona Norte de Buenos Aires</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>soporte@escobarclima.online</p>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <p>Lunes a Domingo: 8:00 - 20:00</p>
+              </div>
+            </div>
+            <div class="paypal-container">
+              <form action="https://www.paypal.com/ncp/payment/NBNF2DN575ZZA" method="post" target="_top" class="paypal-form">
+                <input class="pp-NBNF2DN575ZZA" type="submit" value="Pagar" />
+                <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
+                <section class="paypal-powered-by">
+                  Powered by 
+                  <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" />
+                </section>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p><i class="fas fa-snowflake"></i> EscobarClima - Servicio profesional de aire acondicionado</p>
+          <p>Escobar y Zona Norte</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu functionality
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navbarLinks = document.querySelector('.navbar-links');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll('.navbar-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navbarLinks.classList.remove('active');
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.navbar')) {
+          navbarLinks.classList.remove('active');
+        }
+      });
+    </script>
+  </body>
+</html>
